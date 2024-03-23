@@ -95,7 +95,7 @@ x_single_prediction = np.argmax(
      axis=1)
 print(x_single_prediction)
 plt.imshow(img_28_gray_scaled.reshape(28,28),cmap='gray')
-
+```
 
 ## OUTPUT
 
