@@ -9,16 +9,15 @@ Digit classification and to verify the response for scanned handwritten images.
 
 The MNIST dataset is a collection of handwritten digits. The task is to classify a given image of a handwritten digit into one of 10 classes representing integer values from 0 to 9, inclusively. The dataset has a collection of 60,000 handwrittend digits of size 28 X 28. Here we build a convolutional neural network model that is able to classify to it's appropriate numerical value.
 
-![alt text](data.png)
+![data](https://github.com/Dhanudhanaraj/mnist-classification/assets/119218812/0c1b6a12-b388-4409-b2dc-846a0d4e7473)
 ## Neural Network Model
 
-Include the neural network model diagram.
+![image](https://github.com/rakshadharanika/mnist-classification/assets/149348380/4679a8ee-2d06-4304-af31-3cbefe27416f)
 
 ## DESIGN STEPS
 
 ### STEP 1:
-Write your own steps
-
+Import tensorflow and preprocessing libraries.
 ### STEP 2:
 Build a CNN model
 ### STEP 3:
@@ -65,13 +64,11 @@ X_train_scaled = X_train_scaled.reshape(-1,28,28,1)
 X_test_scaled = X_test_scaled.reshape(-1,28,28,1)
 model = keras.Sequential()
 model.add(layers.Input(shape=(28,28,1)))
-model.add(layers.Conv2D(filters=32,kernel_size=(5,5),strides=(1,1),activation='relu'))
-model.add(layers.Conv2D(filters=64,kernel_size=(5,5),strides=(1,1),activation='relu'))
+model.add(layers.Conv2D(filters=32,kernel_size=(3,3),activation='relu'))
 model.add(layers.MaxPool2D(pool_size=(2,2)))
 model.add(layers.Flatten())
-model.add(layers.Dense(10,activation='relu'))
-model.add(layers.Dense(12,activation='relu'))
-model.add(layers.Dense(10,activation = 'softmax'))
+model.add(layers.Dense(30,activation='relu'))
+model.add(layers.Dense(20,activation='softmax'))
 model.summary()
 model.compile(loss='categorical_crossentropy',optimizer='adam',
 metrics='accuracy')
