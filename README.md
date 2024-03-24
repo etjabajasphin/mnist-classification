@@ -12,7 +12,8 @@ The MNIST dataset is a collection of handwritten digits. The task is to classify
 ![data](https://github.com/Dhanudhanaraj/mnist-classification/assets/119218812/0c1b6a12-b388-4409-b2dc-846a0d4e7473)
 ## Neural Network Model
 
-![image](https://github.com/rakshadharanika/mnist-classification/assets/149348380/4679a8ee-2d06-4304-af31-3cbefe27416f)
+![Screenshot (95)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/6c14738b-8bd2-458e-84c2-07e9bedfdfc2)
+
 
 ## DESIGN STEPS
 
@@ -68,7 +69,7 @@ model.add(layers.Conv2D(filters=32,kernel_size=(3,3),activation='relu'))
 model.add(layers.MaxPool2D(pool_size=(2,2)))
 model.add(layers.Flatten())
 model.add(layers.Dense(30,activation='relu'))
-model.add(layers.Dense(20,activation='softmax'))
+model.add(layers.Dense(10,activation='softmax'))
 model.summary()
 model.compile(loss='categorical_crossentropy',optimizer='adam',
 metrics='accuracy')
