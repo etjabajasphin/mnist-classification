@@ -99,18 +99,20 @@ plt.imshow(img_28_gray_scaled.reshape(28,28),cmap='gray')
 
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-![Screenshot (90)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/5f0f5fa7-2f41-47f4-9bce-c06f8ee12e56)
-![Screenshot (91)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/386da763-c610-4937-8d83-3a6d30d4dc67)
+![Screenshot (97)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/fd3bf2e8-4ac8-4c7e-9436-f8784e0772ab)
+
+![Screenshot (98)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/c8c3d2eb-64d4-4ac0-8ed0-a6e95eb2424f)
+
 
 ### Classification Report
 
-![Screenshot (92)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/adf6fc0d-97a4-48ae-9938-0e369f40737b)
+![Screenshot (99)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/3180ef34-88b5-4c39-846d-d851b6182a45)
+
 
 
 ### Confusion Matrix
 
-
-![Screenshot (93)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/82a3a262-8c56-4f72-93a8-b4e985adcdbc)
+![Screenshot (100)](https://github.com/rakshadharanika/mnist-classification/assets/149348380/c878a934-2b77-44d1-b7d5-5d9935b4257c)
 
 
 
